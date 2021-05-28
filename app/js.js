@@ -1,4 +1,5 @@
-var ping = require("ping");
+function myPing() {
+	var ping = require("ping");
 const fs = require('fs');
 const { throws } = require("assert");
 
@@ -55,4 +56,7 @@ potato.forEach(function (host) {
 // });
 
 
+}
 
+myPing();
+setInterval(myPing , 3600000);
