@@ -30,8 +30,7 @@ potato.forEach(function (host) {
 					if (err) throw err;
 			 
 					var newValue = data.replace(host + "\r\n", '');
-				//	var newValue = data.replace(/^(\s*\r\n){2,}/, "\r\n");
-				//	newValue = data.replace('',"");
+				
 					
 			 
 					fs.writeFile('hello.txt', newValue, 'utf-8', function(err, data) {
@@ -41,7 +40,7 @@ potato.forEach(function (host) {
 			})
 						
 			} else {
-				msg = host + " " + "не уя не успешный";
+				msg = host + " " + "ошибка пинга";
 			}
 			console.log(msg);
 		});
