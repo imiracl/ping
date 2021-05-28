@@ -28,8 +28,8 @@ potato.forEach(function (host) {
 				fs.readFile('hello.txt', 'utf-8', function(err, data) {
 					if (err) throw err;
 			 
-					var newValue = data.replace(host, '');
-					var newValue = data.replace(/^(\s*\r\n){2,}/, "\r\n");
+					var newValue = data.replace(host + "\r\n", '');
+				//	var newValue = data.replace(/^(\s*\r\n){2,}/, "\r\n");
 				//	newValue = data.replace('',"");
 					
 			 
