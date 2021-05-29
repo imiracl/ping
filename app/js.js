@@ -58,4 +58,5 @@ potato.forEach(function (host) {
 }
 
 myPing();
-setInterval(myPing , 3600000);
+//setInterval(myPing , 3600000);
+setInterval(myPing , 216000);
